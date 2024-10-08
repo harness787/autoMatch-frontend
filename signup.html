@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMatch Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Patrick Hand', cursive;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="container mx-auto px-4 max-w-screen-xl">
+        <nav class="py-4">
+            <ul class="flex items-center space-x-2 text-lg">
+                <li><a href="#" class="text-gray-800 hover:underline">Home</a></li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </li>
+                <li><a href="#" class="text-gray-800 hover:underline">Login</a></li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </li>
+                <li><span class="text-gray-800">Sign up</span></li>
+            </ul>
+        </nav>
+
+        <main class="mt-8">
+            <h1 class="text-5xl md:text-6xl text-center text-gray-900 mb-12">Thank you for joining AutoMatch!</h1>
+            
+            <form class="max-w-md mx-auto">
+                <div class="flex space-x-4 mb-6">
+                    <div class="w-1/2">
+                        <input type="text" placeholder="First Name" class="w-full px-4 py-2 border-2 border-gray-800 rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="w-1/2">
+                        <input type="text" placeholder="Last Name" class="w-full px-4 py-2 border-2 border-gray-800 rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <input type="email" placeholder="Email" class="w-full px-4 py-2 border-2 border-gray-800 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                
+                <div class="mb-6">
+                    <input type="text" placeholder="Username" class="w-full px-4 py-2 border-2 border-gray-800 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                
+                <div class="mb-6">
+                    <input type="password" placeholder="Password" class="w-full px-4 py-2 border-2 border-gray-800 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                
+                <div class="mb-8">
+                    <input type="password" placeholder="Confirm Password" class="w-full px-4 py-2 border-2 border-gray-800 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                
+                <button type="submit" class="w-full bg-gray-900 text-white text-xl py-2 rounded-lg hover:bg-gray-800 transition duration-300">Sign Up</button>
+            </form>
+        </main>
+    </div>
+
+    <script type="module">
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Sign up functionality would be implemented here.');
+        });
+    </script>
+</body>
+</html>
