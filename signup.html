@@ -69,8 +69,8 @@
     <script type="module">
         const form = document.querySelector('form');
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Sign up functionality would be implemented here.');
+            event.preventDefault(); // Prevent the default behavior of the anchor tag
+            window.location.href = 'navigation.html'; // Redirect to signup.html
         });
     </script>
 </body>

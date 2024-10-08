@@ -14,16 +14,26 @@
 </head>
 <body class="bg-white">
     <div class="container mx-auto max-w-7xl">
-        <nav class="flex justify-between items-center py-4 px-6 bg-white shadow-md">
-            <div class="flex items-center">
-                <img src="https://via.placeholder.com/122x43" alt="Logo" class="mr-12 border-2 border-[#1a1a1a] rounded-sm">
-                <div class="flex space-x-8">
-                    <a href="#" class="text-[#1a1a1a] text-[22px] leading-7">Home</a>
-                    <a href="#" class="text-[#1a1a1a] text-[22px] leading-7">New Search</a>
-                    <a href="#" class="text-[#1a1a1a] text-[22px] leading-7">Favorites</a>
+        <nav class="w-full h-20 bg-white shadow">
+            <div class="container mx-auto px-4 h-full flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-[122px] h-[43px] bg-white rounded-sm border-2 border-[#1a1a1a] flex items-center justify-center">
+                        <img src="https://via.placeholder.com/100x30?text=AutoMatch" alt="AutoMatch Logo" class="max-w-full max-h-full">
+                    </div>
+                    <div class="ml-12 flex space-x-8">
+                        <!-- Home link to search.html -->
+                        <a href="navigation.html" class="text-[#1a1a1a] text-[22px]">Home</a>
+                        <!-- New Search link to search.html -->
+                        <a href="search.html" class="text-[#1a1a1a] text-[22px]">New Search</a>
+                        <!-- Favorites link to favorite.html -->
+                        <a href="favorite.html" class="text-[#1a1a1a] text-[22px]  text-decoration-line: underline">Favorites</a>
+                    </div>
                 </div>
+                <!-- Sign Out button link to index.html -->
+                <a href="index.html">
+                    <button class="bg-[#1a1a1a] text-white text-[22px] px-4 py-3 rounded-lg border-4 border-[#1a1a1a]">Sign Out</button>
+                </a>
             </div>
-            <button class="bg-[#1a1a1a] text-white text-[22px] leading-7 px-4 py-3 rounded-lg border-4 border-[#1a1a1a]">Sign Out</button>
         </nav>
 
         <main class="mt-8">

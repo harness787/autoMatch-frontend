@@ -48,7 +48,7 @@
 
         <div class="mt-8 text-center text-lg">
             <span>Don't have an account? </span>
-            <a href="#" class="text-[#000cff] hover:underline">Click here</a>
+            <a href="#" id="signupLink" class="text-[#000cff] hover:underline">Click here</a>
             <span> to sign up!</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -60,7 +60,11 @@
         // Add any necessary JavaScript here
         document.querySelector('form').addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Sign In functionality would be implemented here.');
+            window.location.href = 'navigation.html';
+        });
+        document.getElementById('signupLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default behavior of the anchor tag
+        window.location.href = 'signup.html'; // Redirect to signup.html
         });
     </script>
 </body>
